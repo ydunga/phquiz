@@ -1,0 +1,132 @@
+.container { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+    border: 8px solid;
+    background-color: #2ec4b6;
+   
+
+ }
+
+ p{
+     text-align: center;
+ }
+  
+  /* To center content in the containers */
+  .dropzone { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /*fixes dragging causing item to be .5* the size*/
+    flex-wrap: wrap; 
+  }
+
+  .bigtable {
+      display:grid;
+      grid-template-columns: repeat(3, 150px);
+  }
+
+  .bigtable_column{
+      width: 150px;
+
+  }
+ 
+
+  .wrapper { 
+    margin-bottom: 1em; 
+    margin-top: 5px;
+  }
+
+  .options-container {
+      display: flex;
+      flex-direction: row;
+  }
+
+  
+  /* Creating the dropzone boxes */
+  .dropzone {
+    padding: 5px;
+    height: 70px;
+    width: 100px;
+    border-radius: 10px;
+    margin: 2px;
+    background-color: #f4acb7;
+    
+  }
+  
+  /* Creating the dragable boxes */
+  .draggable{
+    padding-top: 18px;
+    border-radius: 1px;
+    text-align: center;
+    background-color: #ffbe0b;
+    height: 50px;
+    width: 115px;
+    word-wrap: break-word;
+  }
+
+  .organism {
+      display:flex;
+    padding: 10px;
+    border-radius: 1px;
+    text-align: center;
+    background-color: #ffbe0b;
+    border: 4px solid black;
+    height: 38px;
+    width: 80px;
+    word-wrap: break-word;
+    justify-content: space-around;
+    border-radius: 10px;
+  
+  }
+
+
+
+
+  
+  /* Occupied dropzone color */
+  .draggable-dropzone--occupied {
+    background-color: #7bed9f;
+  }
+  
+  /* Fix for color changing on container of the image */
+  .occupied {
+    background-color: black; 
+  }
+
+  .heading {
+    width: 80%;
+      height: 100px;
+      background-color: #ff9f1c ;
+      text-align: center;
+      margin: 50px;
+       border: 8px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      margin-left: auto;
+        margin-right:auto;
+        
+       
+    }
+
+    .back {
+        width: 80%;
+        height: 100px;
+        background-color:  #ff006e;
+        position: relative;
+        border: 4px solid black;
+        transform: translate(20px, 20px);
+         border: 8px solid black;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          font-size: 40px;
+          font-weight: bold;
+      }
